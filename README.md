@@ -35,9 +35,7 @@ Multiple parameters are configurable in this program. They are defined as consta
 
 ## Setup & Running
 The program structure is simple, containing a single file, `StockPredictor.java` which is the program that needs to be executed. In order to have an expected output, please prepare a folder structure for the `.csv` files that you plan to test with this program.
-Once executing the program, you will be requested the system path to the directory which contains one (or multiple) `.csv` files, which will be processed.
-
-
+Once executing the program, you will be requested the system path to the directory which contains one (or multiple) `.csv` files, which will be processed. After this, you will be asked how many files to process within the given path. Then, the files will be processed and the result is stored in a directory which is located at the same path as the one provided.
 
 ## Output
 The program will output a new `.csv` file that contains the selected data points, together with the predicted data points. The file will be located in a new directory created during the runtime. This directory is located at the same path provided in the program execution.
