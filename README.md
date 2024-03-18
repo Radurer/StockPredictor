@@ -14,14 +14,23 @@ Then, after obtaining the data point, it is appended to the original data set, s
 
 ## Configuration
 Multiple parameters are configurable in this program. They are defined as constants in the header of the file. Below is a short explanation of each constant's purpose, which can be correlated to the flow explained above:
+
 `DELTA_PERCENTAGE_VALUE` represents the fractional value that is used in order to construct a numerical range from which a new price of a stock is randomly selected.
+
 `MAX_FILES_TO_PROCESS` represents the maximum amount of `.csv` files the program will process for the given input location.
+
 `INDEX_OF_SYMBOL`, `INDEX_OF_DATE` and `INDEX_OF_VALUE` represent the expected order of the columns in the `.csv` file, where `0` is interpreted as the first column.
+
 `AMOUNT_OF_DATAPOINTS_TO_RETURN` represents the number of random consecutive data points which will be selected from each `.csv` file, before making a prediction.
+
 `AMOUNT_OF_DATAPOINTS_TO_PREDICT` represents the amount of data points that the program will predict for each provided stock file.
+
 `SEASON_LENGTH` is a constant representing the algebraic period (seasonality) of the data points in the file.
+
 `dateFormatter` is the expected date format for the date column in the `.csv` files.
+
 `dateTimeFormatter` is used for obtaining a unique file output name.
+
 `outputDirectoryName` is the name of the directory which will store the outputted `.csv` files. This directory is located at the same path provided by the user, as input, when requesting the `.csv` file parsing.
 
 ## Setup & Running
